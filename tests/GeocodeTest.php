@@ -122,6 +122,23 @@ class GeocodeTest extends \PHPUnit_Framework_TestCase
             ],
         ];
 
+        $providers[] = [
+            "Poly Prep Country Day School, 9216 7th Ave, Brooklyn, NY 11228, USA",
+            [
+                'getAddress'            => 'Poly Prep Country Day School, 9216 7th Ave, Brooklyn, NY 11228, USA',
+                'getCountry'            => 'United States',
+                'getShortCountry'       => 'US',
+                'getSubLocality'        => 'Brooklyn',
+                'getShortSubLocality'   => 'Brooklyn',
+                'getDistrict'           => 'New York',
+                'getShortDistrict'      => 'NY',
+                'getPostcode'           => '11228',
+                'getStreetAddress'      => '7th Avenue',
+                'getShortStreetAddress' => '7th Ave',
+                'getStreetNumber'       => '9216',
+            ],
+        ];
+
         return $providers;
     }
 }
